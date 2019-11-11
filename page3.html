@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--TAB LABEL-->
+        <title>Payment Details</title>
+
+        <!--Link CSS stylesheet-->
+        <link rel="stylesheet" type="text/css" href="styles.css" />  
+
+        <!--Link fonts used-->
+        <link href="https://fonts.googleapis.com/css?family=Bitter|Karla&display=swap" rel="stylesheet">
+
+        <!--MEDIA QUERY-->
+        <meta name="viewport" content="width=device-width,initial-scale-1.0">
+    </head>
+
+<body>
+
+<!--Grid Container-->
+        <div class="p123-grid-container">
+
+<!--Left Side and Right Side-->
+                <div class="p123-leftside"></div>
+                <div class="p123-rightside"></div>
+
+<!--Footer-->
+                <div class="p123-footer" id="p3footer">
+                    <div class="backbutton">
+                        <a style="text-decoration:none" href="page2.html" type="button" class="button" id="backbuttonp3"><h1>Back</h1></a>
+                    </div>
+                    <div class="nextbutton">
+                        <a style="text-decoration:none" href="page4.html" type="button" class="button" id="nextbuttonp3"><h1>Next</h1></a>
+                    </div>
+                </div>
+
+<!--FORM-->
+                <div class="p123-form" id="p3divform">
+                    <form name="myForm" id="p3form" action="/js2.js">   
+
+                        <div class="Name-and-Number">
+                            <p>Name on Card*</p>
+                            <input type="text" name="text" placeholder="John Smith" required>
+                
+                            <p>Card Number*</p>
+                            <input type="number" name="cardnumber" placeholder="1234567890">
+                        </div>
+
+                        <div class="Expiry-and-CVV">
+                            <div id="expiry">
+                                <p>Expiry Date*</p>
+                                <input type="month" name="bdaymonth" required>
+                
+                                <p>CVV*</p>
+                                <input type="number" name="cvv" id="cvv" required>
+                            </div>
+                        </div>
+
+                        <div class="submitandreset">
+                            <div id="submitid">
+                                <button type="submit" id="submit">Submit</button>
+                            </div>
+                            <div id="resetdiv">
+                                <button type="reset" id="reset"> reset</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+<!--Progress Bar-->
+                <div class="p123-progressbar">
+                    <div id="step1" class="step1p3" >
+                        <h1>1</h1>
+                     </div>
+                
+                    <div class="lines">
+                        <h1>.</h1>
+                    </div>
+                
+                    <div id="step2"class="step2p3">
+                        <h1>2</h1>
+                    </div>
+                
+                    <div class="lines">
+                         <h1>.</h1>
+                    </div>
+                            
+                    <div id="step3" class="step3p3" >
+                        <h1>3</h1>
+                    </div>
+                </div>
+
+<!--Title Description-->
+                <div class="p123-titledescription" id="payment">
+                    <h1>Payment Details</h1>
+                    <p>Please enter your card details so that we can charge you for your donation once a month. an e-mail will be sent each month before money is due and you can cancel or change your details at any time.</p>
+                    <img src="logos-01.png" alt="Payment methods accepted, VISA, Mastercard, American Express, Paypal" width="425" height="80"id="logo">
+                </div>
+
+<!--Top Bar-->
+                <div class="p123-topbar">
+                    <h1 id="title">DONATIONS - Payment Details</h1>
+                    <a href="index.html">
+                        <img src="logo.png" alt="EduLove Logo, heart with book" width="200" height="80" id="logo">
+                    </a>
+                </div>
+
+<!--JS Scripts-->
+            <script src="js.js"></script>
+            <script src="validate.min.js"></script>
+</body>
+</html>

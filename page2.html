@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <!--TAB LABEL-->
+        <title>Personal Details</title>
+
+        <!--Link CSS stylesheet-->
+        <link rel="stylesheet" type="text/css" href="styles.css" />  
+
+        <!--Link fonts used-->
+        <link href="https://fonts.googleapis.com/css?family=Bitter|Karla&display=swap" rel="stylesheet">
+
+        <!--MEDIA QUERY-->
+        <meta name="viewport" content="width=device-width,initial-scale-1.0">
+
+    </head>
+<body>
+
+<!--Grid Container-->
+        <div class="p123-grid-container">
+
+<!--Left Side and Right Side-->
+        <div class="p123-leftside"></div>
+        <div class="p123-rightside"></div>
+
+<!--Footer-->
+        <div class="p123-footer">
+            <div class="backbutton">
+                <a style="text-decoration:none" href="page1.html" type="button" class="button" id="backbuttonp2"><h1>Back</h1></a>
+            </div>
+                
+            <div class="nextbutton">
+                <a style="text-decoration:none" href="page3.html" type="button" class="button" id="nextbuttonp2"><h1>Next</h1></a>
+            </div>
+        </div>
+
+<!--Form-->
+        <div class="p123-form" id="p2form">
+
+            <form name="myForm" id="myForm" action="/js2.js">
+
+                <p> First Name*</p>
+                <input type="text" name="firsttext" id="firstname" placeholder="John" required>
+                <br>
+
+                <p>Last Name*</p>
+                <input type="text" name="text" placeholder="Smith" required>
+                <br>
+
+                <p>E-mail Address*</p>
+                <input type="email" name="email"placeholder="John.Smith@email.com">
+                <br>
+
+                <p>Date of Birth*</p>
+                <input type="date" name="date" required>
+                <br>
+                <br>
+                        
+                <label for="select">Choose your state</label>
+                <br>
+                <select id="select" name="select" data-form-required>
+                    <option disabled label="Select One" selected value="">Select</option>
+                    <option label="NSW" value="option1"></option>
+                    <option label="NT" value="option2"></option>
+                    <option label="SA" value="option3"></option>
+                    <option label="WA" value="option4"></option>
+                    <option label="TAS" value="option5"></option>
+                    <option label="QLD" value="option6"></option>
+                    <option label="VIC" value="option7"></option>
+                </select>
+                <br>
+                <br>
+                <br>
+                <input type="checkbox" name="e-mails" value="e-mails" checked> <em>I would like to receive e-mails about future volunteer opportunities and to be updated on the success of the organisation.</em> <br>
+                    <br>
+                    <br>
+                    <br>
+                        <div class="submitandreset">
+                            <div id="submitid">
+                                <button type="submit" id="submit">Submit</button>
+                            </div>
+                            <div id="resetdiv">
+                                <button type="reset" id="reset"> reset</button>
+                            </div>
+                        </div>
+            </form>
+        </div>
+
+<!--Progress Bar-->
+        <div class="p123-progressbar">
+            <div id="step1" class="step1p2" >
+                <h1>1</h1>
+            </div>
+    
+            <div class="lines">
+                <h1>.</h1>
+            </div>
+    
+            <div id="step2"class="step2p2">
+                <h1>2</h1>
+            </div>
+    
+            <div class="lines">
+                <h1>.</h1>
+            </div>
+                                
+            <div id="step3" class="step3p2" >
+                <h1>3</h1>
+            </div>
+        </div>
+
+<!--Title Description-->
+        <div class="p123-titledescription">
+            <h1>Personal Details</h1>
+            <p>Please enter your personal details so that we can keep you updated with future opportunities and send a receipt for your donations.</p>
+                    
+        </div>
+
+<!--TOPBAR-->
+        <div class="p123-topbar">
+            <h1 id="title">DONATIONS - Personal Details</h1>
+            <a href="index.html">
+            <img src="logo.png" alt="EduLove Logo, heart with book" width="200" height="80" id="logo">
+            </a>
+        </div>
+    </div>
+
+<!--JS Scripts-->
+     script src="js.js"></script>
+    <script src="validate.min.js"></script>
+</body>
+</html>
